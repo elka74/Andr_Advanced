@@ -7,35 +7,29 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_avatar"
-            android:icon = ""
             android:title="avatar"/>
 
         <item
             android:id="@+id/about_developers"
-            android:icon=""
             android:title="about developers"/>
 
         <item
             android:id="@+id/feedback"
-            android:icon=""
             android:title="feedback"/>
     </group>
     <item android:title="options">
           <menu>
               <item
                   android:id="@+id/settings"
-                  android:icon=""
                   android:title="settings"/>
 
               <item
                   android:id="@+id/choose_city_menu"
-                  android:icon=""
-                  android:title="choose city"/>
+                  android:title="@string/choose_city"/>
 
               <item
                   android:id="@+id/naw_share"
-                  android:icon=""
-                  android:title="share"/>
+                  android:title="@string/share"/>
         </menu>
     </item>
 </menu>

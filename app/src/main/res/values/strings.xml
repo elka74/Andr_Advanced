@@ -13,4 +13,10 @@
     <string name="pressure_z">725 mm.rt.st</string>
     <string name="humidity_z">45 %</string>
     <string name="choose_city">choose city</string>
+    <string name="navigation_drawer_open">string</string>
+    <string name="navigation_drawer_close">string</string>
+    <string name="android_studo_android_com">android.studio@android.com</string>
+    <string name="share">share</string>
+    <string name="settings">settings</string>
+    <string name="t_e">true</string>
 </resources>
