@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:group.android="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigationView">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_avatar"
+            android:icon = ""
+            android:title="avatar"/>
+
+        <item
+            android:id="@+id/about_developers"
+            android:icon=""
+            android:title="about developers"/>
+
+        <item
+            android:id="@+id/feedback"
+            android:icon=""
+            android:title="feedback"/>
+    </group>
+    <item android:title="options">
+          <menu>
+              <item
+                  android:id="@+id/settings"
+                  android:icon=""
+                  android:title="settings"/>
+
+              <item
+                  android:id="@+id/choose_city_menu"
+                  android:icon=""
+                  android:title="choose city"/>
+
+              <item
+                  android:id="@+id/naw_share"
+                  android:icon=""
+                  android:title="share"/>
+        </menu>
+    </item>
+</menu>
