@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Andr_Advanced</string>
+    <string name="app_name">And_Advanced</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="weather">WEATHER</string>
@@ -13,4 +13,11 @@
     <string name="pressure_z">725 mm.rt.st</string>
     <string name="humidity_z">45 %</string>
     <string name="choose_city">choose city</string>
+    <string name="navigation_drawer_open">string</string>
+    <string name="navigation_drawer_close">string</string>
+    <string name="android_studo_android_com">android.studio@android.com</string>
+    <string name="share">share</string>
+    <string name="settings">settings</string>
+    <string name="t_e">true</string>
+    <string name="android_studio">Android Studio</string>
 </resources>

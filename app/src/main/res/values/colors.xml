@@ -10,4 +10,7 @@
     <color name="frg_home">#425CBA</color>
     <color name="city">#FFFFC107</color>
     <color name="city_press">#FF2400</color>
+    <color name="colorPrimaryDark">#FFBF80</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3F51B5</color>
 </resources>
