@@ -26,16 +26,13 @@ public class Home_fragment extends Fragment {
         TableLayout dop_fun = frgm.findViewById(R.id.dop_fun);
         TextView city = frgm.findViewById(R.id.city);
 
-        city.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Choose_City fragment = new Choose_City();
-                assert getFragmentManager() != null;
-                getFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.frg_home, fragment)
-                        .commit();
-            }
+        city.setOnClickListener(v -> {
+            Choose_City fragment = new Choose_City();
+            assert getFragmentManager() != null;
+            getFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.frg_home, fragment)
+                    .commit();
         });
         return frgm;
 

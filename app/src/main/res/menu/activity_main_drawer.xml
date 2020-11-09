@@ -7,21 +7,21 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_avatar"
-            android:title="avatar"/>
+            android:title="@string/avatar"/>
 
         <item
             android:id="@+id/about_developers"
-            android:title="about developers"/>
+            android:title="@string/about_developers"/>
 
         <item
             android:id="@+id/feedback"
-            android:title="feedback"/>
+            android:title="@string/feedback"/>
     </group>
-    <item android:title="options">
+    <item android:title="@string/options">
           <menu>
               <item
                   android:id="@+id/settings"
-                  android:title="settings"/>
+                  android:title="@string/settings"/>
 
               <item
                   android:id="@+id/choose_city_menu"
