@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:paddingTop="8dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:text="Android Studio" />
+        android:text="@string/android_studio" />
     <TextView
         android:id="@+id/andr"
         android:layout_width="wrap_content"
