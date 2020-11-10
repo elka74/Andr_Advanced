@@ -24,17 +24,7 @@
        app:headerLayout="@layout/nav_header_main"
        app:menu="@menu/activity_main_drawer" />
 
-   <FrameLayout
-       android:id="@+id/choose_city"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent">
-   </FrameLayout>
 
-   <fragment
-       android:name="com.example.andr_advanced.Home_fragment"
-       android:id="@+id/frg_home"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent" />
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

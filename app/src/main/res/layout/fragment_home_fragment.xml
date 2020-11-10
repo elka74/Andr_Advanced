@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="70dp"
         android:text="@string/weather"
         android:textSize="40sp"
         android:textColor="@color/white"
@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/moscow"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="120dp"
         android:textSize="40sp"
         android:textColor="@color/white"
         android:textStyle="bold"
@@ -38,7 +38,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@drawable/cloudy"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="180dp"
         android:contentDescription="@string/logo" />
 
     <TextView
@@ -47,7 +47,7 @@
         android:layout_height="150dp"
         android:layout_gravity="end"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="180dp"
         android:paddingTop="40dp"
         android:text="@string/tmp_msc"
         android:textSize="60sp"
