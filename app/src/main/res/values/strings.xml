@@ -24,5 +24,8 @@
     <string name="about_developers">about developers</string>
     <string name="feedback">feedback</string>
     <string name="options">options</string>
+    <string name="action_settings">srttings</string>
+    <string name="clear">clear</string>
+    <string name="search">search</string>
 
 </resources>

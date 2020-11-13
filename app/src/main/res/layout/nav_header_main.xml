@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="176dp"
     android:background="@color/colorPrimary"
     android:divider="@drawable/hazy"
     android:gravity="bottom"
@@ -16,17 +16,17 @@
 
     <ImageView
         android:id="@+id/foto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="73dp"
+        android:layout_height="61dp"
         android:contentDescription="@string/logo"
         android:paddingTop="8dp"
-        app:srcCompat="@color/colorPrimary"
-        tools:srcCompat="@mipmap/ic_avatar_img_round" />
+        android:visibility="visible"
+        app:srcCompat="@drawable/avatar"
+        tools:srcCompat="@drawable/avatar" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="14dp"
-        android:paddingTop="8dp"
         android:text="@string/android_studio"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
