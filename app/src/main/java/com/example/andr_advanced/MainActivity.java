@@ -1,41 +1,52 @@
 package com.example.andr_advanced;
 
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.SearchView;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-
-import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+import androidx.annotation.NonNull;
+import androidx.appcompat.widget.SearchView;
+import androidx.core.view.GravityCompat;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+
+import android.view.MenuItem;
+
+import com.google.android.material.navigation.NavigationView;
+
+import androidx.drawerlayout.widget.DrawerLayout;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
+import android.view.Menu;
+import android.widget.TextView;
+
+
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Toolbar toolbar = initToolbar();
+        initDrawer(toolbar);
 
         Home_fragment fragment = new Home_fragment();
         getSupportFragmentManager()
                 .beginTransaction()
                 .replace(R.id.frg_home, fragment)
                 .commit();
-        Menu main;
-        Toolbar toolbar = initToolbar();
-        initDrawer(toolbar);
 
     }
+
+
 
     private Toolbar initToolbar() {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         return toolbar;
+
     }
 
     private void initDrawer(Toolbar toolbar) {
