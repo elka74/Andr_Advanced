@@ -6,22 +6,24 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 
 public class Dop_fragment extends BottomSheetDialogFragment {
 
-        private DialogListener.OnDialogListener dialogListener;
+        private OnDialogListener dialogListener;
 
         public static Dop_fragment newInstance() {
             return new Dop_fragment();
         }
 
-        public void setOnDialogListener(DialogListener.OnDialogListener dialogListener){
+        public void setOnDialogListener(OnDialogListener dialogListener){
             this.dialogListener = dialogListener;
         }
 
@@ -52,12 +54,20 @@ public class Dop_fragment extends BottomSheetDialogFragment {
             view.findViewById(R.id.btnOk).setOnClickListener(view1 -> {
                 dismiss();
                 if (dialogListener != null) dialogListener.onDialogOk();
+                Fragment fragment = new Home_fragment();
+
+                getFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.dop, fragment)
+                        .commit();
             });
 
             view.findViewById(R.id.btnNo).setOnClickListener(view12 -> {
                 dismiss();
                 if (dialogListener != null) dialogListener.onDialogNo();
             });
+
+
 
         }
     }

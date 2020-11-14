@@ -13,7 +13,7 @@ import androidx.fragment.app.Fragment;
 
 
 public class Home_fragment extends Fragment {
-
+     public static  OnDialogListener dialogListener;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -31,6 +31,8 @@ public class Home_fragment extends Fragment {
         TextView textView5 = frgm.findViewById(R.id.textView6);
         TextView textView6 = frgm.findViewById(R.id.textView7);
 
+
+
        /* city.setOnClickListener(v -> {
             Choose_City fragment = new Choose_City();
             assert getFragmentManager() != null;
@@ -40,31 +42,19 @@ public class Home_fragment extends Fragment {
                     .commit();
         });
         return frgm;*/
-        city.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Dop_fragment dialogFragment =
-                        Dop_fragment.newInstance();
-                dialogFragment.setOnDialogListener(dialogListener);
-                dialogFragment.show(getFragmentManager(),
-                        "dop_fragment");
-            }
+
+
+        city.setOnClickListener(view -> {
+            Dop_fragment dialogFragment =
+                    Dop_fragment.newInstance();
+            dialogFragment.setOnDialogListener(dialogListener);
+            dialogFragment.show(getFragmentManager(),
+                    "dop_fragment");
         });
         return frgm;
     }
 
-    private OnDialogListener dialogListener = new OnDialogListener() {
-        @Override
-        public void onDialogOk() {
-            getFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.dop, fragment)
-                    .commit();
-        }
-        @Override
-        public viod onDialogNo(){
-        }
-    }
+
 
     @SuppressLint("NonConstantResourceId")
     int translateIdToIndex(int id){
