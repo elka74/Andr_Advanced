@@ -31,6 +31,9 @@
     <string name="dialog_message">" show additional information"</string>
     <string name="ok">OK</string>
     <string name="no">NO</string>
+    <string name="refresh">refresh</string>
+    <string name="apply">apply</string>
+    <string name="city">city_input</string>
 
 
 </resources>

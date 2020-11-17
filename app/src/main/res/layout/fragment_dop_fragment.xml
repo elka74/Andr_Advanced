@@ -10,7 +10,8 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/dialog_message"
+        android:text="@string/choose_city"
+        android:textColor="@color/black"
         android:textAlignment="center"
         android:gravity="center" />
 
@@ -19,20 +20,23 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btnOk"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/ok"
-            tools:ignore="ButtonStyle" />
 
         <Button
-            android:id="@+id/btnNo"
+            android:id="@+id/rectangles"
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/apply"
+            tools:ignore="ButtonStyle" />
+
+        <EditText
+            android:id="@+id/input"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/no"
-            tools:ignore="ButtonStyle" />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/choose_city" />
+
     </LinearLayout>
 </LinearLayout>
