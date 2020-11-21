@@ -99,7 +99,7 @@ public class Trans {
             temperature.setText(String.format("%f2", weatherRequest.getMain().getTemp()));
             pressure.setText(String.format("%d", weatherRequest.getMain().getPressure()));
             humidity.setText(String.format("%d", weatherRequest.getMain().getHumidity()));
-            windSpeed.setText(String.format("%d", weatherRequest.getWind().getSpeed()));
+            windSpeed.setText(String.format("%f", weatherRequest.getWind().getSpeed()));
         }
     };
 }
